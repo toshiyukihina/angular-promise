@@ -1,0 +1,27 @@
+Using <code>window.setTimeout()</code> and <code>$q</code>.
+<div ng-controller="Greet1Ctrl">
+  <div class="row">
+    <div class="col-md-4">
+      <input type="text" ng-model="name" class="form-control input-lg"></input>
+    </div>
+    <div class="col-md-4">
+      <button ng-click="greet()" class="btn btn-default btn-lg" ng-disabled="!name">Greet</button>
+    </div>
+  </div>
+  {{result}}
+</div>
+
+<p/>
+
+Using <code>$timeout</code>.
+<div ng-controller="Greet2Ctrl">
+  <div class="row">
+    <div class="col-md-4">
+      <input type="text" ng-model="name" class="form-control input-lg"></input>
+    </div>
+    <div class="col-md-4">
+      <button ng-click="greet()" class="btn btn-default btn-lg" ng-disabled="!name">Greet</button>
+    </div>
+  </div>
+  {{result}}
+</div>
